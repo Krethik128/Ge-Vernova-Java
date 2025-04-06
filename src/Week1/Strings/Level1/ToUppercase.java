@@ -1,19 +1,20 @@
 package src.Week1.Strings;
 
 import java.util.Scanner;
+import java.lang.StringBuilder;
 
-public class Touppercase {
+public class ToUppercase {
 
         public static String toUppercase(String str){
-            String result="";
+            StringBuilder result=new StringBuilder();
             for(int i=0;i<str.length();i++){
                 char ch = str.charAt(i);
                 if (ch >= 'a' && ch <= 'z') {
                     ch = (char) (ch - 32);
                 }
-                result += ch;
+                result.append(ch);
             }
-            return result;
+            return result.toString();
         }
         public static boolean compareStrings(String s1, String s2) {
             if (s1.length() != s2.length()) {
@@ -31,12 +32,11 @@ public class Touppercase {
             String str=sc.nextLine();
             String ConvertedUpperCase=toUppercase(str);
             String UsingInbuiltFunc=str.toUpperCase();
-            if(ConvertedUpperCase.equals(UsingInbuiltFunc)){
-                System.out.println(ConvertedUpperCase+" and "+UsingInbuiltFunc+" are Same");
-            }
-            else{
-                System.out.println(ConvertedUpperCase+" and "+UsingInbuiltFunc+" are Not Same");
-            }
+            boolean isSame = compareStrings(ConvertedUpperCase, UsingInbuiltFunc);
+
+            System.out.println("Built-in lowercase: " + UsingInbuiltFunc);
+            System.out.println("Manual lowercase:   " + ConvertedUpperCase);
+            System.out.println("Are both conversions same? " + isSame);
 
         }
     }
