@@ -1,4 +1,4 @@
-package src.week1.Strings.level3;
+package src.week1.strings.level3;
 
 class FrequencyUsingNestedLoops {
     public static void main(String[] args) {

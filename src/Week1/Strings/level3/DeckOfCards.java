@@ -1,4 +1,4 @@
-package src.week1.Strings.level3;
+package src.week1.strings.level3;
 
 import java.util.ArrayList;
 import java.util.Collections;
