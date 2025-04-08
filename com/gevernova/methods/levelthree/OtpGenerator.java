@@ -4,7 +4,7 @@ import java.util.Random;
 public class OtpGenerator {
     public static void Generate6DigitOTP(int n){
         for(int i=0;i<n;i++){
-            int otp=(int) (Math.random() * 900000) + 100000;
+            int otp=(int)(Math.random()*90000)+10000;
             System.out.println(otp);
         }
     }
