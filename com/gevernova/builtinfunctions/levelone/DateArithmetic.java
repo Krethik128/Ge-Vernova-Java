@@ -4,9 +4,6 @@ import java.time.*;
 import java.util.*;
 
 // Takes a date input and performs arithmetic operations on it
-import java.time.*;
-import java.util.*;
-
 public class DateArithmetic {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
