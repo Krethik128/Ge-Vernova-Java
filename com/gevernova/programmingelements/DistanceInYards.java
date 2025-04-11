@@ -1,7 +1,7 @@
 package com.gevernova.programmingelements;
 
 import java.util.*;
-public class Distance_in_Yards {
+public class DistanceInYards {
     public static void main(String args[]) {
         Scanner sc = new Scanner(System.in);
         int dInFeet = sc.nextInt();
