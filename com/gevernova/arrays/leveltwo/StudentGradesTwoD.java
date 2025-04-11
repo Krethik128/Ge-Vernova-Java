@@ -2,7 +2,7 @@ package com.gevernova.arrays.leveltwo;
 
 import java.util.Scanner;
 
-public class StudentGrades2D {
+public class StudentGradesTwoD {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter the number of students: ");
