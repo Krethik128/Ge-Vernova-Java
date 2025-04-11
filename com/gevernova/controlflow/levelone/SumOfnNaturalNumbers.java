@@ -2,7 +2,7 @@ package com.gevernova.controlflow.levelone;
 
 import java.util.Scanner;
 
-public class sum_of_n_natural_numbers {
+public class SumOfnNaturalNumbers {
         public static void main(String[] args) {
             Scanner scanner = new Scanner(System.in);
             System.out.print("Enter a number: ");

@@ -2,7 +2,7 @@ package com.gevernova.controlflow.leveltwo;
 
 import java.util.Scanner;
 
-public class factorsForLoop {
+public class FactorsForLoop {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 

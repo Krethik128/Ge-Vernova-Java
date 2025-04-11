@@ -2,7 +2,7 @@ package com.gevernova.controlflow.leveltwo;
 
 import java.util.Scanner;
 
-public class employeeBonuses {
+public class EmployeeBonuses {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 

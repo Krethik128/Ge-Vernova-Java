@@ -1,7 +1,7 @@
 package com.gevernova.controlflow.levelone;
 import java.util.Scanner;
 
-public class factorialFor {
+public class FactorialUsingForLoop {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Enter a positive number: ");

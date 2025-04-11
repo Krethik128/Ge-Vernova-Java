@@ -1,7 +1,7 @@
 package com.gevernova.controlflow.levelone;
 import java.util.Scanner;
 
-public class employeeBonus {
+public class EmployeeBonus {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Enter the salary: ");

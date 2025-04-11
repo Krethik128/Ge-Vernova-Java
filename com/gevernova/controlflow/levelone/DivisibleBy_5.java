@@ -2,7 +2,7 @@ package com.gevernova.controlflow.levelone;
 
 import java.util.Scanner;
 
-public class divisibleby_5 {
+public class DivisibleBy_5 {
     public static String isDivisibleBy5(int number) {
         return "Is the number " + number + " divisible by 5? " + (number % 5 == 0 ? "Yes" : "No");
     }

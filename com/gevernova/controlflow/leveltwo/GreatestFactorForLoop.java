@@ -2,7 +2,7 @@ package com.gevernova.controlflow.leveltwo;
 
 import java.util.Scanner;
 
-public class greatestFactorForLoop {
+public class GreatestFactorForLoop {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 

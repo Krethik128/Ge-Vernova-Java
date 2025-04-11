@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class factorsWhileLoop {
+public class FactorsWhileLoop {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
