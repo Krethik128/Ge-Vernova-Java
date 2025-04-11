@@ -1,14 +1,16 @@
 package com.gevernova.objectinspector;
 
 class Product {
-    public static double discount = 10.0;
-
-    private static int counter = 0;
+    public static double discount;
+    private static int counter;
     public final int productID;
     public String productName;
     public double price;
     public int quantity;
-
+    static{
+         discount = 10.0;
+        counter = 0;
+    }
     public Product(String productName, double price, int quantity) {
         this.productID = ++counter;
         this.productName = productName;

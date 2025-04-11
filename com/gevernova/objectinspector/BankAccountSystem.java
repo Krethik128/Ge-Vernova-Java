@@ -1,9 +1,14 @@
 package com.gevernova.objectinspector;
 class BankAccount{
-    public static String bankName="ABC Bank";;
+    public static String bankName;
+    private static int totalAccounts;
+    static{
+        bankName="ABC Bank";
+        totalAccounts=0;
+    }
     public String accountHolderName;
     private final int accountNumber;
-    private static int totalAccounts = 0;
+
     BankAccount(String accountHolderName,int accountNumber){
         this.accountHolderName=accountHolderName;
         this.accountNumber=accountNumber;

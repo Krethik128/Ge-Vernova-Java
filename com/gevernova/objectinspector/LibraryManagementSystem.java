@@ -1,10 +1,12 @@
 package com.gevernova.objectinspector;
 class Book{
-    public static String libraryName="SRM Central Library";
+    public static String libraryName;
     public String title;
     public String author;
     public int isbn;
-
+    static{
+        libraryName="SRM Central Library";
+    }
     public Book(String title, String author,int isbn) {
         this.title = title;
         this.author = author;

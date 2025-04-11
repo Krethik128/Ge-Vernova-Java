@@ -1,8 +1,12 @@
 package com.gevernova.objectinspector;
 
 class Patient {
-    public static String hospitalName = "Gevernova Hospital";
-    private static int totalPatients = 0;
+    public static String hospitalName;
+    private static int totalPatients;
+    static {
+        hospitalName = "Gevernova Hospital";
+        totalPatients = 0;
+    }
 
     public final int patientID;
     public String name;

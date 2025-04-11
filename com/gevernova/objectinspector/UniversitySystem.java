@@ -1,12 +1,15 @@
 package com.gevernova.objectinspector;
 
 class Student {
-    public static String universityName = "Gevernova University";
-    private static int totalStudents = 0;
-
+    public static String universityName;
+    private static int totalStudents;
     public final int rollNumber;
     public String name;
     public String grade;
+    static {
+        universityName = " University of Hyderabad";
+        totalStudents = 0;
+    }
 
     public Student(int rollNumber, String name, String grade) {
         this.rollNumber = rollNumber;

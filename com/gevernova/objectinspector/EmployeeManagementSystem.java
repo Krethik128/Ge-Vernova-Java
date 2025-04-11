@@ -1,11 +1,15 @@
 package com.gevernova.objectinspector;
 class Employee {
-    public static String companyName = "Gevernova Corp";
-    private static int totalEmployees = 0;
-
+    public static String companyName;
+    private static int totalEmployees;
     public final int id;
     public String name;
     public String designation;
+    static {
+        companyName="Gevernova Corp";
+        totalEmployees=0;
+    }
+
 
     public Employee(int id, String name, String designation) {
         this.id = id;

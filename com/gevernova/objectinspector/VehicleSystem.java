@@ -1,12 +1,14 @@
 package com.gevernova.objectinspector;
 
 class Vehicle {
-    public static double registrationFee = 500.0;
-
+    public static double registrationFee;
     public final int registrationNumber;
     public String ownerName;
     public String vehicleType;
 
+    static{
+        registrationFee = 500.0;
+    }
     public Vehicle(int registrationNumber, String ownerName, String vehicleType) {//creating constructor
         this.registrationNumber = registrationNumber;
         this.ownerName = ownerName;
