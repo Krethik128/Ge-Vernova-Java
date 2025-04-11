@@ -2,7 +2,7 @@ package com.gevernova.methods.levelone;
 
 import java.util.Scanner;
 
-public class SmallesAndLargestOf3 {
+public class SmallesAndLargestOfThree {
     public static int[] findSmallestAndLargest(int number1, int number2, int number3) {
         int temp[] = new int[2];
 

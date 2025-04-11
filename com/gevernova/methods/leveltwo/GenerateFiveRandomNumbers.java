@@ -1,7 +1,7 @@
 package com.gevernova.methods.leveltwo;
 import java.util.Random;
 import java.util.Arrays;
-public class Generate5RandomNumbers {
+public class GenerateFiveRandomNumbers {
     public int[] generate4DigitRandomArray(int size){
         int []randomNumbers=new int[size];
         Random random=new Random();
@@ -29,7 +29,7 @@ public class Generate5RandomNumbers {
     }
 
     public static void main(String args[]){
-        Generate5RandomNumbers analyzer = new Generate5RandomNumbers();
+        GenerateFiveRandomNumbers analyzer = new GenerateFiveRandomNumbers();
         int numberOfValues = 5;
 
         int[] randomValues = analyzer.generate4DigitRandomArray(numberOfValues);
