@@ -1,7 +1,6 @@
-package com.gevernova.constructors.oops.polymorphism;
+package com.gevernova.oops.polymorphism;
 
 import java.util.ArrayList;
-import java.sql.Array;
 
 abstract class Vehicle{
     private final String vehicleNumber;

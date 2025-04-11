@@ -1,4 +1,4 @@
-package com.gevernova.constructors.oops.encapsulation;
+package com.gevernova.oops.encapsulation;
 
 import java.util.ArrayList;
 
