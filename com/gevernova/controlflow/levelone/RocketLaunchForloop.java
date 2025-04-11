@@ -2,7 +2,7 @@ package com.gevernova.controlflow.levelone;
 
 import java.util.Scanner;
 
-public class Rocket_launch_Forloop {
+public class RocketLaunchForloop {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         double total = 0;

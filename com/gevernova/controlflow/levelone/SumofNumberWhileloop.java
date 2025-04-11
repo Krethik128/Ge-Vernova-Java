@@ -2,7 +2,7 @@ package com.gevernova.controlflow.levelone;
 
 import java.util.Scanner;
 
-public class SumofNumber_Whileloop {
+public class SumofNumberWhileloop {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Enter a positive number: ");

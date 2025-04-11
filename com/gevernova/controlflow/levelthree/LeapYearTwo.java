@@ -1,7 +1,7 @@
 package com.gevernova.controlflow.levelthree;
 import java.util.Scanner;
 
-public class LeapYear2 {
+public class LeapYearTwo {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Enter a year: ");
