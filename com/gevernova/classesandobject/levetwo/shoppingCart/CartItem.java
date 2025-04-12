@@ -1,4 +1,4 @@
-package com.gevernova.classesandobject.levetwo;
+package com.gevernova.classesandobject.levetwo.shoppingCart;
 
 class CartItem {
     private String itemName;
@@ -20,12 +20,5 @@ class CartItem {
         System.out.println("Price: $" + price);
         System.out.println("Quantity: " + quantity);
         System.out.println("Total: $" + getTotalCost());
-    }
-}
-
-public class ShoppingCart {
-    public static void main(String[] args){
-        CartItem car=new CartItem("Mirror",50000,10);
-        car.display();
     }
 }

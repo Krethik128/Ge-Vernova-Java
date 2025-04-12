@@ -1,4 +1,5 @@
-package com.gevernova.classesandobject.levetwo;
+package com.gevernova.classesandobject.levetwo.bookingSystem;
+
 class MovieTicket {
     private String movieName;
     private int seatNumber;
@@ -14,13 +15,5 @@ class MovieTicket {
         System.out.println("Movie: " + movieName);
         System.out.println("Seat No: " + seatNumber);
         System.out.println("Price: $" + price);
-    }
-}
-
-public class BookingSystem {
-    public static void main(String[] args){
-        MovieTicket obj1=new MovieTicket();
-        obj1.bookTicket("Matrix",69,45.23);
-        obj1.displayTicket();
     }
 }

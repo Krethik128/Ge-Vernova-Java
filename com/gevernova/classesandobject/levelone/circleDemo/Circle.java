@@ -1,4 +1,4 @@
-package com.gevernova.classesandobject.levelone;
+package com.gevernova.classesandobject.levelone.circleDemo;
 
 class Circle {
     private double radius;
@@ -19,12 +19,5 @@ class Circle {
         System.out.println("Radius: " + radius);
         System.out.println("Area: " + getArea());
         System.out.println("Circumference: " + getCircumference());
-    }
-}
-
-public class CircleDemo {
-    public static void main(String[] args) {
-        Circle c = new Circle(5.0);
-        c.display();
     }
 }

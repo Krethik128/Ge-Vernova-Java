@@ -1,4 +1,4 @@
-package com.gevernova.classesandobject.levelone;
+package com.gevernova.classesandobject.levelone.bookClass;
 
 class Book {
     private String title;
@@ -15,12 +15,5 @@ class Book {
         System.out.println("Title: " + title);
         System.out.println("Author: " + author);
         System.out.println("Price: $" + price);
-    }
-}
-
-public class BookClass {
-    public static void main(String[] args) {
-        Book book = new Book("1984", "George Orwell", 15.99);
-        book.display();
     }
 }

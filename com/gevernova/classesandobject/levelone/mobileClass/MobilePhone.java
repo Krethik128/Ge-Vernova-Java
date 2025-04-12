@@ -1,4 +1,4 @@
-package com.gevernova.classesandobject.levelone;
+package com.gevernova.classesandobject.levelone.mobileClass;
 
 class MobilePhone {
     private String brand;
@@ -19,11 +19,3 @@ class MobilePhone {
 
 
 }
-
-public class Mobileclass {
-    public static void main(String[] args) {
-        MobilePhone phone = new MobilePhone("Samsung", "Galaxy S24", 999.99);
-        phone.display();
-    }
-}
-

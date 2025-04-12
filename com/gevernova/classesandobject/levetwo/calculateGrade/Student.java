@@ -1,4 +1,4 @@
-package com.gevernova.classesandobject.levetwo;
+package com.gevernova.classesandobject.levetwo.calculateGrade;
 
 class Student {
     private String name;
@@ -25,12 +25,4 @@ class Student {
         System.out.println("Marks: " + marks);
         System.out.println("Grade: " + calculateGrade());
     }
-}
-
-public class CalculateGrade {
-    public static void main(String[] args) {
-        Student obj1 = new Student("Krethik", 185, 99);
-        obj1.display();
-    }
-
 }

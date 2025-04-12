@@ -1,6 +1,4 @@
-package com.gevernova.classesandobject.levetwo;
-
-import java.lang.management.PlatformLoggingMXBean;
+package com.gevernova.classesandobject.levetwo.palindromeChecker;
 
 class PalindromeChecker {
     private String text;
@@ -17,12 +15,5 @@ class PalindromeChecker {
     void displayResult() {
         System.out.println("Text: " + text);
         System.out.println("Is Palindrome? " + isPalindrome());
-    }
-}
-
-public class PalindromeStringChecker {
-    public static void main(String[] args){
-        PalindromeChecker obj1=new PalindromeChecker("RacecaR");
-        obj1.displayResult();
     }
 }
