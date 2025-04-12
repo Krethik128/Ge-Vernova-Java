@@ -1,13 +1,15 @@
-package com.gevernova.objectinspector;
+package com.gevernova.objectinspector.employeeManagementSystem;
+
 class Employee {
     public static String companyName;
     private static int totalEmployees;
     public final int id;
     public String name;
     public String designation;
+
     static {
-        companyName="Gevernova Corp";
-        totalEmployees=0;
+        companyName = "Gevernova Corp";
+        totalEmployees = 0;
     }
 
 
@@ -27,16 +29,5 @@ class Employee {
         System.out.println("Name: " + name);
         System.out.println("Designation: " + designation);
         System.out.println("Company: " + companyName);
-    }
-}
-public class EmployeeManagementSystem {
-    public static void main(String[] args) {
-        Employee e1 = new Employee(101, "Alice", "Developer");
-        Employee e2 = new Employee(102, "Bob", "Designer");
-
-        if (e1 instanceof Employee) e1.displayDetails();
-        if (e2 instanceof Employee) e2.displayDetails();
-
-        Employee.displayTotalEmployees();
     }
 }
