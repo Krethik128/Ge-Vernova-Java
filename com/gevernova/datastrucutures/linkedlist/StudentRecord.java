@@ -28,6 +28,28 @@ public class StudentRecord {
         tail.next = newNode;
         tail = newNode; // update the tail to the new node
     }
+    void deleteAtEnd(){
+        if (head == null) {
+            System.out.println("List is empty.");
+            return;
+        }
+
+        // Case 1: Only one node
+        if (head == tail) {
+            System.out.println("Deleted: " + head.rollnum);
+            head = tail = null;
+            return;
+        }
+        //traverse the linked list from start to before tail and remove the last node and mark last before node as tail
+        Node current = head;
+        while (current.next != tail) {
+            current = current.next;
+        }
+
+        System.out.println("Deleted: " + tail.rollnum);
+        current.next = null;
+        tail = current;
+    }
     public void deleteStudent(int rollnum) {
         if (head == null) {
             System.out.println("No data present");
