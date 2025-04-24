@@ -1,4 +1,4 @@
-package com.gevernova.searching.runTimeAnalysis;
+package com.gevernova.searching.runtimeAnalysis;
 
 public class SearchATarget {
     public static int linearSearch(int[] numbers, int key) {
