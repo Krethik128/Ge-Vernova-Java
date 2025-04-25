@@ -1,6 +1,5 @@
-package com.gevernova.java8;
+package com.gevernova.java8.streams;
 
-import java.util.function.Predicate;
 // Defining a custom functional interface
 @FunctionalInterface //Using Function interface Annotation this allows only one abstract method in the interface
 interface Operation<T extends Number> { //Using Generics where a datatype extends subclasses of Number

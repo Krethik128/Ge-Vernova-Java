@@ -1,4 +1,4 @@
-package com.gevernova.java8;
+package com.gevernova.java8.streams;
 
 import java.util.function.Predicate;
 
@@ -13,10 +13,14 @@ public class PredicateExample {
         System.out.println("Is 7 even? " + isEven.test(7));   // false
 
         // Another Predicate: checks if a string starts with "A"
-        Predicate<String> startsWithA = s -> s.startsWith("A") ;
+        Predicate<String> startsWithA = s -> s.toLowerCase().startsWith("a") ;
+        Predicate<String> endWithB = s -> s.toLowerCase().endsWith("y") ;
 
+        Predicate <String> and= startsWithA.or(endWithB);
         System.out.println("Starts with A? 'Apple' -> " + startsWithA.test("Apple")); // true
-        System.out.println("Starts with A? 'Banana' -> " + startsWithA.test("Banana")); // false
+        System.out.println("Starts with A? 'Banana' -> " + endWithB.test("Banana")); // false
+
+        System.out.println(and.test("AkshayB"));//Using Both the Predicate to check the string
     }
 }
 
