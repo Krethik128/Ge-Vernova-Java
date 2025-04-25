@@ -2,6 +2,7 @@ package com.gevernova.datastrucutures.hashMap;
 
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Scanner;
 
 public class TwoSum {
@@ -20,13 +21,12 @@ public class TwoSum {
         for(int i=0;i< list.size();i++){
             int num=list.get(i);
             int complement=target-num;
-            if(map.containsKey(complement)){
+            if(map.getOrDefault(complement, 0) > 0){
                 System.out.println("Two sum found: " + complement + " + " + num + " = " + target);
                 System.out.println("Indices: " + map.get(complement) + " and " + i);
-                return;
             }
             // store the number and its index
-                map.put(num, i);
+                map.put(num, map.getOrDefault(complement,0)+1);
         }
         System.out.println("No pair found with the given sum.");
     }
