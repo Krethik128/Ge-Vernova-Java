@@ -1,8 +1,8 @@
-package com.gevernova.java8.streams;
+package com.gevernova.java8.streams.interfaces;
 
 import java.util.function.Predicate;
 
-public class PredicateExample {
+public class PredicateInterface {
     public static void main(String[] args) {
 
         // Predicate to check if a number is even

@@ -23,8 +23,8 @@ public class FindElementInSortedMatrix {
         return false;
     }
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        int target = sc.nextInt();
+        Scanner scanner = new Scanner(System.in);
+        int target = scanner.nextInt();
 
         int[][] matrix = {
                 {1, 2, 3, 4, 5},
@@ -39,6 +39,6 @@ public class FindElementInSortedMatrix {
             System.out.println("Target " + target + " not found in matrix.");
         }
 
-        sc.close();
+        scanner.close();
     }
 }

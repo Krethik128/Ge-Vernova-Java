@@ -22,22 +22,22 @@ public class DistanceBetweenTwoPoints {
 
         System.out.println("Enter the coordinates of the first point (x1, y1):");
         System.out.print("x1: ");
-        double x1 = scanner.nextDouble();
+        double xOne = scanner.nextDouble();
         System.out.print("y1: ");
-        double y1 = scanner.nextDouble();
+        double yOne = scanner.nextDouble();
 
         System.out.println("\nEnter the coordinates of the second point (x2, y2):");
         System.out.print("x2: ");
-        double x2 = scanner.nextDouble();
+        double xTwo = scanner.nextDouble();
         System.out.print("y2: ");
-        double y2 = scanner.nextDouble();
+        double yTwo = scanner.nextDouble();
 
-        double distance = calculateEuclideanDistance(x1, y1, x2, y2);
+        double distance = calculateEuclideanDistance(xOne, yOne, xTwo, yTwo);
         System.out.printf("\nThe Euclidean distance between (%.2f, %.2f) and (%.2f, %.2f) is: %.2f\n",
-                x1, y1, x2, y2, distance);
+                xOne, yOne, xTwo, yTwo, distance);
 
         System.out.println("\nThe equation of the line passing through these two points:");
-        findLineEquation(x1, y1, x2, y2);
+        findLineEquation(xOne, yOne, xTwo, yTwo);
 
         scanner.close();
     }

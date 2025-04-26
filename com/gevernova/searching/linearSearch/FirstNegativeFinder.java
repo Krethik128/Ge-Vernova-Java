@@ -13,25 +13,25 @@ public class FirstNegativeFinder {
     }
 
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
 
         System.out.println("Enter size of array:");
-        int n = sc.nextInt();
+        int n = scanner.nextInt();
 
-        int[] arr = new int[n];
+        int[] array = new int[n];
         System.out.println("Enter " + n + " integers:");
         for (int i = 0; i < n; i++) {
-            arr[i] = sc.nextInt();
+            array[i] = scanner.nextInt();
         }
 
-        int index = findFirstNegativeIndex(arr);
+        int index = findFirstNegativeIndex(array);
 
         if (index != -1) {
-            System.out.println("First negative number found at index: " + index + " (Value: " + arr[index] + ")");
+            System.out.println("First negative number found at index: " + index + " (Value: " + array[index] + ")");
         } else {
             System.out.println("No negative number found in the array.");
         }
 
-        sc.close();
+        scanner.close();
     }
 }

@@ -4,18 +4,18 @@ import java.util.Scanner;
 
 public class BMICalculatorTwoD {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
         System.out.print("Enter the number of persons: ");
-        int number = sc.nextInt();
+        int number = scanner.nextInt();
 
         double[][] personData = new double[number][3];
         String[] weightStatus = new String[number];
 
         for (int i = 0; i < number; i++) {
             System.out.print("Enter weight of person " + (i + 1) + " (in kg): ");
-            personData[i][0] = sc.nextDouble();
+            personData[i][0] = scanner.nextDouble();
             System.out.print("Enter height of person " + (i + 1) + " (in cm): ");
-            personData[i][1] = sc.nextDouble();
+            personData[i][1] = scanner.nextDouble();
         }
 
         for (int i = 0; i < number; i++) {

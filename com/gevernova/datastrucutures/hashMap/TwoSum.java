@@ -7,15 +7,15 @@ import java.util.Scanner;
 
 public class TwoSum {
     public static void main(String[] args) {
-        Scanner sc=new Scanner(System.in);
+        Scanner scanner=new Scanner(System.in);
         ArrayList<Integer> list=new ArrayList<>();
         System.out.println("Enter integers (non-int to stop):");
-        while(sc.hasNextInt()){
-            list.add(sc.nextInt());
+        while(scanner.hasNextInt()){
+            list.add(scanner.nextInt());
         }
-        sc.next();
+        scanner.next();
         System.out.print("Enter target sum: ");
-        int target = sc.nextInt();
+        int target = scanner.nextInt();
 
         HashMap<Integer,Integer> map=new HashMap<>();
         for(int i=0;i< list.size();i++){

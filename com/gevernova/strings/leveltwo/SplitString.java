@@ -3,11 +3,11 @@ package com.gevernova.strings.leveltwo;
 import java.util.Scanner;
 
 public class SplitString {
-    public static int getLength(String str){
+    public static int getLength(String string){
         int count=0;
         while(true){
             try{
-                str.charAt(count);//str[i];
+                string.charAt(count);//str[i];
                 count++;
             }catch (StringIndexOutOfBoundsException e) {
 
@@ -17,13 +17,13 @@ public class SplitString {
         return count;
     }
     public static void main(String [] args){
-        Scanner sc=new Scanner(System.in);
-        String str=sc.nextLine();
-        int length=getLength(str);
+        Scanner scanner=new Scanner(System.in);
+        String string=scanner.nextLine();
+        int length=getLength(string);
 
         int wordCount=1;
         for(int i=0;i<length;i++){
-            if(str.charAt(i)==' '){
+            if(string.charAt(i)==' '){
                 wordCount++;
             }
         }
@@ -31,10 +31,10 @@ public class SplitString {
         int idx=0;
         int start=0;
         for(int i=0;i<length;i++){
-            if(str.charAt(i)==' '){
+            if(string.charAt(i)==' '){
                 String temp="";
                 for(int j=start;j<i;j++){
-                    temp+=str.charAt(j);
+                    temp+=string.charAt(j);
                 }
                 start=i+1;
                 arr[idx]=temp;
@@ -43,10 +43,10 @@ public class SplitString {
         }
         String temp = "";
         for (int j = start; j < length; j++) {
-            temp += str.charAt(j);
+            temp += string.charAt(j);
         }
 
-        String[] builtInWords = str.split(" ");
+        String[] builtInWords = string.split(" ");
         System.out.println("Built-in split: ");
         for (String word : builtInWords) {
             System.out.println(word);

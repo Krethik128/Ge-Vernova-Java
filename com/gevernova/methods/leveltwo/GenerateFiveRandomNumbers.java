@@ -15,20 +15,20 @@ public class GenerateFiveRandomNumbers {
     }
     public double[] findAverageMinMax(int[] numbers){
         double sum = 0;
-        int min = numbers[0];
-        int max = numbers[0];
+        int minimum = numbers[0];
+        int maximum = numbers[0];
 
         for (int number : numbers) {
             sum += number;
-            min = Math.min(min, number);
-            max = Math.max(max, number);
+            minimum = Math.min(minimum, number);
+            maximum = Math.max(maximum, number);
         }
 
         double average = sum / numbers.length;
-        return new double[]{average, min, max};
+        return new double[]{average, minimum, maximum};
     }
 
-    public static void main(String args[]){
+    public static void main(String[] args){
         GenerateFiveRandomNumbers analyzer = new GenerateFiveRandomNumbers();
         int numberOfValues = 5;
 

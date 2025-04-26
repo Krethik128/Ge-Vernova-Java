@@ -9,9 +9,9 @@ public class SumofNaturalNumbersRecursive {
         return sum;
     }
     public static void main(String[] args) {
-        Scanner sc=new Scanner(System.in);
+        Scanner scanner=new Scanner(System.in);
         System.out.println("Enter a number: ");
-        int n=sc.nextInt();
+        int n=scanner.nextInt();
         System.out.println("The sum od n Natural numbers using Recursion is :"+FindsumRecursive(n,0));
         System.out.println("The sum od n Natural numbers using Formula n*(n+1)/2 is :"+n*(n+1)/2);
 

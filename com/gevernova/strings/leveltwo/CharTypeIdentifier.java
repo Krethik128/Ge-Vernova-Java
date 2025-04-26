@@ -4,26 +4,26 @@ import java.util.Scanner;
 public class CharTypeIdentifier {
 
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
         System.out.print("Enter a string: ");
-        String input = sc.nextLine();
+        String input = scanner.nextLine();
 
         int vowelCount = 0;
         int consonantCount = 0;
         input = input.toLowerCase();
 
         for (int i = 0; i < input.length(); i++) {
-            char ch = input.charAt(i);
+            char charAt = input.charAt(i);
 
-            if (ch >= 'a' && ch <= 'z') {
-                if (isVowel(ch)) {
-                    System.out.println(ch + " - Vowel");
+            if (charAt >= 'a' && charAt <= 'z') {
+                if (isVowel(charAt)) {
+                    System.out.println(charAt + " - Vowel");
                 } else {
-                    System.out.println(ch + " - Consonant");
+                    System.out.println(charAt + " - Consonant");
                 }
             }
             else{
-                System.out.println(ch + " - Not a Letter");
+                System.out.println(charAt + " - Not a Letter");
             }
 
         }

@@ -4,10 +4,10 @@ import java.util.Scanner;
 
 public class GreatestFactorForLoop {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
 
         System.out.print("Enter a positive integer: ");
-        int number = sc.nextInt();
+        int number = scanner.nextInt();
         int greatestFactor = 1;
 
         if (number > 1) {

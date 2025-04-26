@@ -7,14 +7,14 @@ public class Friends {
         int[] ages = new int[3];
         double[] heights = new double[3];
 
-        Scanner sc = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
 
         // Taking input for ages and heights
         for (int i = 0; i < 3; i++) {
             System.out.print("Enter age of " + names[i] + ": ");
-            ages[i] = sc.nextInt();
+            ages[i] = scanner.nextInt();
             System.out.print("Enter height of " + names[i] + " (in cm): ");
-            heights[i] = sc.nextDouble();
+            heights[i] = scanner.nextDouble();
         }
 
         // Finding the youngest and tallest friend

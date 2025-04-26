@@ -5,9 +5,9 @@ import java.util.Arrays;
 
 public class FindPrimeNum {
     public static void main(String[] args){
-        Scanner sc=new Scanner(System.in);
-        int n=sc.nextInt();
-        Boolean isPrime[]=new Boolean[n+1];
+        Scanner scanner=new Scanner(System.in);
+        int n=scanner.nextInt();
+        Boolean[] isPrime =new Boolean[n+1];
         Arrays.fill(isPrime,true);
         // Step 2: 0 and 1 are not prime
         isPrime[0] = false;

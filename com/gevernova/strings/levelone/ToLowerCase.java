@@ -14,23 +14,23 @@ public class ToLowerCase {
             }
             return result.toString();
         }
-        public static boolean compareStrings(String s1, String s2) {
-            if (s1.length() != s2.length()) {
+        public static boolean compareStrings(String string, String stringTwo) {
+            if (string.length() != stringTwo.length()) {
                 return false;
             }
-            for (int i = 0; i < s1.length(); i++) {
-                if (s1.charAt(i) != s2.charAt(i)) {
+            for (int i = 0; i < string.length(); i++) {
+                if (string.charAt(i) != stringTwo.charAt(i)) {
                     return false;
                 }
             }
             return true;
         }
         public static void main(String[] args){
-            Scanner sc=new Scanner(System.in);
-            String str=sc.nextLine();
+            Scanner scanner=new Scanner(System.in);
+            String string=scanner.nextLine();
 
-            String ConvertedLowerCase=toLowercase(str);
-            String UsingInbuiltFunc=str.toLowerCase();
+            String ConvertedLowerCase=toLowercase(string);
+            String UsingInbuiltFunc=string.toLowerCase();
             boolean isSame = compareStrings(ConvertedLowerCase, UsingInbuiltFunc);
 
             System.out.println("Built-in lowercase: " + UsingInbuiltFunc);

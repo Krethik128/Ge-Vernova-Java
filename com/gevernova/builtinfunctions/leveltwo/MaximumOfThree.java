@@ -19,13 +19,13 @@ public class MaximumOfThree {
         scanner.close();
         return numbers;
     }
-    public static int findMaximum(int num1, int num2, int num3) {
-        int max = num1; // Assume the first number is the maximum initially
-        if (num2 > max) {
-            max = num2;
+    public static int findMaximum(int numberOne, int numberTwo, int numberThree) {
+        int max = numberOne; // Assume the first number is the maximum initially
+        if (numberTwo > max) {
+            max = numberTwo;
         }
-        if (num3 > max) {
-            max = num3;
+        if (numberThree > max) {
+            max = numberThree;
         }
         return max;
     }
@@ -33,15 +33,15 @@ public class MaximumOfThree {
     public static void main(String[] args) {
         // Get the three numbers from the user
         int[] inputs = getUserInputs();
-        int number1 = inputs[0];
-        int number2 = inputs[1];
-        int number3 = inputs[2];
+        int numberOne = inputs[0];
+        int numberTwo = inputs[1];
+        int numberThree = inputs[2];
 
         // Calculate the maximum value
-        int maximum = findMaximum(number1, number2, number3);
+        int maximum = findMaximum(numberOne, numberTwo, numberThree);
 
         // Display the result
-        System.out.println("The three numbers entered are: " + number1 + ", " + number2 + ", and " + number3);
+        System.out.println("The three numbers entered are: " + numberOne + ", " + numberTwo + ", and " + numberThree);
         System.out.println("The maximum of these three numbers is: " + maximum);
     }
 }

@@ -5,12 +5,12 @@ public class Smallest {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Enter the first number: ");
-        int num1 = scanner.nextInt();
+        int numberOne = scanner.nextInt();
         System.out.print("Enter the second number: ");
-        int num2 = scanner.nextInt();
+        int numberTwo = scanner.nextInt();
         System.out.print("Enter the third number: ");
-        int num3 = scanner.nextInt();
-        System.out.println("Is the first number the smallest? " + (num1 < num2 && num1 < num3 ? "Yes" : "No"));
+        int numberThree = scanner.nextInt();
+        System.out.println("Is the first number the smallest? " + (numberOne < numberTwo && numberOne < numberThree ? "Yes" : "No"));
     }
 }
 

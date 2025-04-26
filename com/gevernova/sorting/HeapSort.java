@@ -32,37 +32,37 @@ public class HeapSort {
     }
 
     // Main function to perform heap sort
-    public static void heapSort(int[] arr) {
-        int n = arr.length;
+    public static void heapSort(int[] array) {
+        int n = array.length;
 
         // Step 1: Build Max Heap (rearrange array)
         for (int i = n / 2 - 1; i >= 0; i--) {
-            heapify(arr, n, i);
+            heapify(array, n, i);
         }
 
         // Step 2: Extract elements from heap one by one
         for (int i = n - 1; i > 0; i--) {
             // Move current root to end
-            int temp = arr[0];
-            arr[0] = arr[i];
-            arr[i] = temp;
+            int temp = array[0];
+            array[0] = array[i];
+            array[i] = temp;
 
             // Reheapify reduced heap
-            heapify(arr, i, 0);
+            heapify(array, i, 0);
         }
     }
 
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
 
         System.out.println("Enter number of job applicants:");
-        int n = sc.nextInt();
+        int n = scanner.nextInt();
 
         int[] salaries = new int[n];
 
         System.out.println("Enter expected salaries of applicants:");
         for (int i = 0; i < n; i++) {
-            salaries[i] = sc.nextInt();
+            salaries[i] = scanner.nextInt();
         }
 
         System.out.println("Original Salary Demands:");
@@ -77,7 +77,7 @@ public class HeapSort {
             System.out.print(sal + " ");
         }
 
-        sc.close();
+        scanner.close();
     }
 }
 

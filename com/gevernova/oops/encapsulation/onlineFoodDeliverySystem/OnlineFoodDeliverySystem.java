@@ -16,10 +16,10 @@ public class OnlineFoodDeliverySystem {
     }
 
     public static void main(String[] args) {
-        FoodItem item1 = new VegItem("Paneer Tikka", 200, 2);
-        FoodItem item2 = new NonVegItem("Chicken Biryani", 250, 3);
+        FoodItem itemOne = new VegItem("Paneer Tikka", 200, 2);
+        FoodItem itemTwo = new NonVegItem("Chicken Biryani", 250, 3);
 
-        processOrder(item1);
-        processOrder(item2);
+        processOrder(itemOne);
+        processOrder(itemTwo);
     }
 }

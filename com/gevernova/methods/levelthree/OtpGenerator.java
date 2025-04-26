@@ -9,9 +9,9 @@ public class OtpGenerator {
         }
     }
     public static void main(String[] args){
-        Scanner sc=new Scanner(System.in);
+        Scanner scanner=new Scanner(System.in);
         System.out.println("Enter the Otps Required :");
-        int n=sc.nextInt();
+        int n=scanner.nextInt(); //n is the size of otp
         Generate6DigitOTP(n);
     }
 }

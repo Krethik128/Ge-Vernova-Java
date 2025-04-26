@@ -4,9 +4,9 @@ import java.util.Scanner;
 public class VowelConsonantCounter {
 
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
         System.out.print("Enter a string: ");
-        String input = sc.nextLine();
+        String input = scanner.nextLine();
 
         int vowelCount = 0;
         int consonantCount = 0;

@@ -2,8 +2,8 @@ package com.gevernova.strings.levelthree;
 
 class PalindromeCheck {
     public static void main(String[] args) {
-        String str = "madam";
-        boolean isPalindrome = checkPalindrome(str);
+        String string = "madam";
+        boolean isPalindrome = checkPalindrome(string);
         System.out.println("Is palindrome: " + isPalindrome);
     }
 

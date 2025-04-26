@@ -6,10 +6,10 @@ public class VotingEligibility {
 
     // Method to generate random 2-digit ages for n students
     public static int[] generateRandomAges(int n) {
-        Random rand = new Random();
+        Random random = new Random();
         int[] ages = new int[n];
         for (int i = 0; i < n; i++) {
-            ages[i] = rand.nextInt(90) + 10;
+            ages[i] = random.nextInt(90) + 10;
         }
         return ages;
     }
@@ -42,10 +42,10 @@ public class VotingEligibility {
 
     // Main method
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
 
         System.out.print("Enter number of students: ");
-        int n = sc.nextInt();
+        int n = scanner.nextInt();
 
         int[] ages = generateRandomAges(n);
 

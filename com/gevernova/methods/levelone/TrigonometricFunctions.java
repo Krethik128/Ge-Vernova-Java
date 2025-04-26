@@ -4,9 +4,9 @@ import java.util.Scanner;
 
 public class TrigonometricFunctions {
     public static void main(String[] args) {
-        Scanner sc=new Scanner(System.in);
+        Scanner scanner=new Scanner(System.in);
         System.out.println("Enter any angle between 0 to 360");
-        double angle = sc.nextDouble(); // Example angle in degrees
+        double angle = scanner.nextDouble(); // Example angle in degrees
         double[] results = calculateTrigonometricFunctions(angle);
 
         System.out.printf("For angle %.2f degrees:%n", angle);

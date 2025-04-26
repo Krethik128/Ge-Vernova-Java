@@ -1,11 +1,11 @@
 package com.gevernova.arrays.leveltwo;
 import java.util.Scanner;
 public class EmpBonus {
-    public static void main(String args[]){
+    public static void main(String[] args){
         int Employees=10;
-        Scanner sc=new Scanner(System.in);
-        double salaries[]=new double[Employees];
-        double yearsOfService[]=new double[Employees];
+        Scanner scanner=new Scanner(System.in);
+        double[] salaries =new double[Employees];
+        double[] yearsOfService =new double[Employees];
         double[] bonuses = new double[Employees];
         double[] newSalaries = new double[Employees];
         double totalBonus = 0.0;
@@ -13,9 +13,9 @@ public class EmpBonus {
         double totalNewSalary = 0.0;
         for(int i=0;i<salaries.length;i++){
             System.out.print("Enter salary for employee " + (i + 1) + ": ");
-            salaries[i]=sc.nextDouble();
+            salaries[i]=scanner.nextDouble();
             System.out.print("Enter years of service for employee " + (i + 1) + ": ");
-            yearsOfService[i] = sc.nextDouble();
+            yearsOfService[i] = scanner.nextDouble();
             if (salaries[i] < 0 || yearsOfService[i] < 0) {
                 System.out.println("Invalid input. Please enter again.");
                 i--; // Decrement index to re-enter the values

@@ -4,11 +4,11 @@ import java.util.Scanner;
 
 public class SearchWord {
     public static void main(String[] args) {
-        Scanner sc=new Scanner(System.in);
+        Scanner scanner=new Scanner(System.in);
         System.out.println("Enter the Sentence ");
-        String str=sc.nextLine();
+        String str=scanner.nextLine();
         System.out.println("Enter the word to find in the sentence ");
-        String word=sc.nextLine();
+        String word=scanner.nextLine();
         int j=0;
         boolean isPresent=false;
         for(int i=0;i<str.length();i++){
@@ -31,6 +31,6 @@ public class SearchWord {
             System.out.println("The word \"" + word + "\" is not found in the sentence.");
         }
 
-        sc.close();
+        scanner.close();
     }
 }

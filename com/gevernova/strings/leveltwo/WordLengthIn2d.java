@@ -17,13 +17,13 @@ public class WordLengthIn2d {
         return count;
     }
     public static void main(String [] args){
-        Scanner sc=new Scanner(System.in);
-        String str=sc.nextLine();
-        int length=getLength(str);
+        Scanner scanner=new Scanner(System.in);
+        String string=scanner.nextLine();
+        int length=getLength(string);
 
         int wordCount=1;
         for(int i=0;i<length;i++){
-            if(str.charAt(i)==' '){
+            if(string.charAt(i)==' '){
                 wordCount++;
             }
         }
@@ -31,10 +31,10 @@ public class WordLengthIn2d {
         int idx=0;
         int start=0;
         for(int i=0;i<length;i++){
-            if(str.charAt(i)==' '){
+            if(string.charAt(i)==' '){
                 String temp="";
                 for(int j=start;j<i;j++){
-                    temp+=str.charAt(j);
+                    temp+=string.charAt(j);
                 }
 
                 arr[idx][0]=temp;
@@ -43,18 +43,18 @@ public class WordLengthIn2d {
                 start=i+1;
             }
         }
-        String temp = "";
+        String temporary = "";
         for (int j = start; j < length; j++) {
-            temp += str.charAt(j);
+            temporary += string.charAt(j);
         }
-        arr[idx][0] = temp;
-        arr[idx][1] = String.valueOf(getLength(temp));
+        arr[idx][0] = temporary;
+        arr[idx][1] = String.valueOf(getLength(temporary));
 
         System.out.println("\nWord\tLength");
         for (String[] strings : arr) {
             String word = strings[0];
-            int len = Integer.parseInt(strings[1]);
-            System.out.println(word + "\t" + len);
+            int localLength = Integer.parseInt(strings[1]);
+            System.out.println(word + "\t" + localLength);
         }
     }
 }

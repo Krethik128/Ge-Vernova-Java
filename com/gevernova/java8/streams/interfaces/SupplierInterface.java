@@ -1,8 +1,8 @@
-package com.gevernova.java8.streams;
+package com.gevernova.java8.streams.interfaces;
 
 import java.util.function.Supplier;
 
-public class SupplierKeyword {
+public class SupplierInterface {
     public static void main(String[] args){
         //No parameters Passed
         Supplier<String> returns=()->"Hello World";// Return without taking any Input

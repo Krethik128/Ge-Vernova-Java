@@ -1,29 +1,29 @@
 package com.gevernova.strings.levelone;
 import java.util.Scanner;
 public class Substr {
-    public static boolean comparecharat(String a,String b){
-        if(a.length()!=b.length()){
+    public static boolean comparecharat(String stringOne,String stringTwo){
+        if(stringOne.length()!=stringTwo.length()){
             return false;
         }
-        for(int i=0;i<a.length();i++){
-            if(a.charAt(i)!=b.charAt(i)){
+        for(int i=0;i<stringOne.length();i++){
+            if(stringOne.charAt(i)!=stringTwo.charAt(i)){
                 return false;
             }
         }
         return true;
     }
     public static void main(String[] args){
-        Scanner sc = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
 
         System.out.print("Enter first string: ");
-        String s = sc.next();
+        String s = scanner.next();
 
         System.out.print("Enter second string: ");
-        String s1 = sc.next();
-        int len1=s.length();
-        int len2=s1.length();
-        boolean isSame = comparecharat(s, s1);
-        boolean equalsComparison = s.substring(0,len1).equals(s1.substring(0,len2));
+        String string = scanner.next();
+        int length=s.length();
+        int lengthTwo=string.length();
+        boolean isSame = comparecharat(s, string);
+        boolean equalsComparison = s.substring(0,length).equals(string.substring(0,lengthTwo));
 
         if (isSame == equalsComparison) {
             System.out.println("Both comparison methods give the same result");

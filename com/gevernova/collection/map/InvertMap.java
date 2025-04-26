@@ -5,9 +5,19 @@ import java.util.*;
 public class InvertMap {
     public static <K, V> Map<V, List<K>> invert(Map<K, V> map) {
         Map<V, List<K>> inverted = new HashMap<>();
-        for (Map.Entry<K, V> entry : map.entrySet()) {
-            inverted.computeIfAbsent(entry.getValue(), k -> new ArrayList<>()).add(entry.getKey());
+        for (K key : map.keySet()) {
+            V value = map.get(key);// original value becomes new key
+
+            // If the new key (original value) is not in the inverted map,
+            // create a new empty list for it
+            if (!inverted.containsKey(value)) {
+                inverted.put(value, new ArrayList<>());
+            }
+
+            // Add the key to the list of its corresponding value
+            inverted.get(value).add(key);
         }
+
         return inverted;
     }
 

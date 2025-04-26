@@ -6,11 +6,11 @@ public class StoreValues {
         double[] numbers = new double[10];
         double total = 0.0;
         int index = 0;
-        Scanner sc = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
 
         while (true) {
             System.out.print("Enter a number: ");
-            double num = sc.nextDouble();
+            double num = scanner.nextDouble();
             if (num <= 0 || index == 10) {
                 break;
             }

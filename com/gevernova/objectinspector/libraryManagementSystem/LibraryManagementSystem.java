@@ -2,12 +2,12 @@ package com.gevernova.objectinspector.libraryManagementSystem;
 
 public class LibraryManagementSystem {
     public static void main(String args[]){
-            Book obj1=new Book("java 8","Raoul-Gabriel Urma",978161729);
-            if(obj1 instanceof Book){
-                obj1.displayDetails();
+            Book book=new Book("java 8","Raoul-Gabriel Urma",978161729);
+            if(book instanceof Book){
+                book.displayDetails();
             }
-            if(obj1 instanceof  Book){
-                obj1.displayLibraryName();
+            if(book instanceof  Book){
+                book.displayLibraryName();
             }
     }
 }

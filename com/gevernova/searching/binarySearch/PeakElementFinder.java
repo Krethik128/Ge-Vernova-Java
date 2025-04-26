@@ -17,8 +17,8 @@ public class PeakElementFinder {
     }
 
     public static void main(String[] args) {
-        int[] arr = {1, 3, 20, 4, 1, 0};
-        int peakIndex = findPeak(arr);
-        System.out.println("Peak found at index: " + peakIndex + " (Value: " + arr[peakIndex] + ")");
+        int[] array = {1, 3, 20, 4, 1, 0};
+        int peakIndex = findPeak(array);
+        System.out.println("Peak found at index: " + peakIndex + " (Value: " + array[peakIndex] + ")");
     }
 }

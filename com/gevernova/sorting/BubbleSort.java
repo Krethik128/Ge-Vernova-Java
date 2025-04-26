@@ -24,16 +24,16 @@ public class BubbleSort {
 
 
     public static void main(String[] args){
-        Scanner sc = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
 
         System.out.println("Enter the size of array: ");
-        int size = sc.nextInt();
+        int size = scanner.nextInt();
 
         int[] arr = new int[size];
 
         System.out.println("Enter the array elements:");
         for(int i = 0; i < size; i++){
-            arr[i] = sc.nextInt();
+            arr[i] = scanner.nextInt();
         }
 
         System.out.println("Original array:");
@@ -48,7 +48,7 @@ public class BubbleSort {
             System.out.print(num + " ");
         }
 
-        sc.close(); // Close scanner to avoid resource leak
+        scanner.close(); // Close scanner to avoid resource leak
     }
 
 }

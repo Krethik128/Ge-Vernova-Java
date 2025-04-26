@@ -2,25 +2,25 @@ package com.gevernova.strings.levelone;
 import java.util.Arrays;
 import java.util.Scanner;
 public class PrintEachChar {
-    public static char[] ConvertIntoArr(String s){
-        char[] arr=new char[s.length()];
-        for(int i=0;i<s.length();i++){
-            arr[i]=s.charAt(i);
+    public static char[] ConvertIntoArr(String string){
+        char[] array=new char[string.length()];
+        for(int i=0;i<string.length();i++){
+            array[i]=string.charAt(i);
         }
-        return arr;
+        return array;
     }
-    public static boolean compareArrays(char a1[],char a2[]){
-        if(a1.length!=a2.length) return false;
-        for(int i=0;i<a1.length;i++){
-            if(a1[i]!=a2[i]) return false;
+    public static boolean compareArrays(char stringOne[],char stringTwo[]){
+        if(stringOne.length!=stringTwo.length) return false;
+        for(int i=0;i<stringOne.length;i++){
+            if(stringOne[i]!=stringTwo[i]) return false;
         }
         return true;
     }
     public static void main(String[] args){
         Scanner sc=new Scanner(System.in);
-        String s1=sc.next();
-        char[] userDefinedArray=ConvertIntoArr(s1);
-        char[] builtInArray = s1.toCharArray();
+        String stringOne=sc.next();
+        char[] userDefinedArray=ConvertIntoArr(stringOne);
+        char[] builtInArray = stringOne.toCharArray();
         boolean areEqual=compareArrays(userDefinedArray,builtInArray);
 
         System.out.println("User-defined method output: " + Arrays.toString(userDefinedArray));

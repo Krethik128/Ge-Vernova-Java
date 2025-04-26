@@ -3,17 +3,17 @@ package com.gevernova.strings.leveltwo;
 import java.util.*;
 public class FindLargestWord {
     public static void main(String[] args){
-        Scanner sc=new Scanner(System.in);
-        String str=sc.nextLine();
-        String[] builtInWords=str.split(" ");
-        int maxi=0;
+        Scanner scanner=new Scanner(System.in);
+        String string=scanner.nextLine();
+        String[] builtInWords=string.split(" ");
+        int maximum=0;
         String temp="";
         for(String st:builtInWords){
-            if(st.length()>maxi){
-                maxi=st.length();
+            if(st.length()>maximum){
+                maximum=st.length();
                 temp=st;
             }
         }
-        System.out.println("Maximum length is of word "+temp+" in "+ str +" is "+maxi);
+        System.out.println("Maximum length is of word "+temp+" in "+ string +" is "+maximum);
     }
 }

@@ -2,9 +2,9 @@ package com.gevernova.strings.levelone;
 
 public class NullException {
     public static void main(String[] args){
-        String s=null;
+        String string=null;
         try {
-            System.out.println("Length of text: " + s.length());  // This will throw an exception
+            System.out.println("Length of text: " + string.length());  // This will throw an exception
         } catch (NullPointerException e) {
             System.out.println("ive successfully handled the exception");
         }

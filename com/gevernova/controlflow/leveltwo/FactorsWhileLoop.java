@@ -1,11 +1,13 @@
+package com.gevernova.controlflow.leveltwo;
+
 import java.util.Scanner;
 
 public class FactorsWhileLoop {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
 
         System.out.print("Enter a positive integer: ");
-        int number = sc.nextInt();
+        int number = scanner.nextInt();
 
         if (number > 0) {
             System.out.println("The factors of " + number + " are:");
@@ -20,7 +22,7 @@ public class FactorsWhileLoop {
             System.out.println("Please enter a positive integer.");
         }
 
-        sc.close();
+        scanner.close();
     }
 }
 

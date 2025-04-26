@@ -1,30 +1,30 @@
 package com.gevernova.sorting.quickSort;
 
 class Sorting {
-    public static int partition(int[] arr, int low, int high) {
-        int pivot = arr[low];
+    public static int partition(int[] array, int low, int high) {
+        int pivot = array[low];
         int i = low + 1;
         int j = high;
         while (i <= j) {
 
-            while (i <= high && arr[i] <= pivot) {
+            while (i <= high && array[i] <= pivot) {
                 i++;
             }
             // Find the first element smaller than pivot from the right
-            while (arr[j] > pivot) {
+            while (array[j] > pivot) {
                 j--;
             }
             if (i < j) {
-                int temp = arr[i];
-                arr[i] = arr[j];
-                arr[j] = temp;
+                int temp = array[i];
+                array[i] = array[j];
+                array[j] = temp;
             }
         }
 
         // Finally, place the pivot in its correct sorted position
-        int temp = arr[low];
-        arr[low] = arr[j];
-        arr[j] = temp;
+        int temp = array[low];
+        array[low] = array[j];
+        array[j] = temp;
 
         return j; // Return the partition index
     }

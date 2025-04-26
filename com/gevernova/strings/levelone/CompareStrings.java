@@ -13,14 +13,11 @@ public class CompareStrings {
         return true;
     }
     public static void main(String args[]){
-        Scanner sc=new Scanner(System.in);
-        String s=sc.next();
-        String s1=sc.next();
-        String a=new String("krethik");
-        String b=new String("krethik");
+        String string=new String("krethik");
+        String stringTwo=new String("krethik");
 
-        boolean is_same=compareCharat(a,b);
-        boolean equalsComparison=a.equals(b);
+        boolean is_same=compareCharat(string,stringTwo);
+        boolean equalsComparison=string.equals(stringTwo);
         if (is_same == equalsComparison) {
             System.out.println("Both strings given are same and both are in pointing at same location.");
         } else {

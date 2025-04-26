@@ -12,15 +12,15 @@ public class BMICalculator {
         double height = scanner.nextDouble();
 
         height = height / 100; // Convert cm to meters
-        double bmi = weight / (height * height);
+        double bodyMassIndex = weight / (height * height);
 
-        System.out.println("BMI: " + bmi);
+        System.out.println("BMI: " + bodyMassIndex);
 
-        if (bmi < 18.5) {
+        if (bodyMassIndex < 18.5) {
             System.out.println("Underweight");
-        } else if (bmi < 24.9) {
+        } else if (bodyMassIndex < 24.9) {
             System.out.println("Normal weight");
-        } else if (bmi < 29.9) {
+        } else if (bodyMassIndex < 29.9) {
             System.out.println("Overweight");
         } else {
             System.out.println("Obesity");

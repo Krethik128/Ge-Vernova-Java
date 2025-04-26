@@ -4,20 +4,20 @@ import java.util.Scanner;
 
 public class StudentGradesTwoD {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
         System.out.print("Enter the number of students: ");
-        int number = sc.nextInt();
+        int number = scanner.nextInt();
 
         int[][] marks = new int[number][3];
         double[] percentages = new double[number];
         String[] grades = new String[number];
         for (int i = 0; i < number; i++) {
             System.out.print("Enter marks for student " + (i + 1) + " in Physics: ");
-            marks[i][0] = sc.nextInt();
+            marks[i][0] = scanner.nextInt();
             System.out.print("Enter marks for student " + (i + 1) + " in Chemistry: ");
-            marks[i][1] = sc.nextInt();
+            marks[i][1] = scanner.nextInt();
             System.out.print("Enter marks for student " + (i + 1) + " in Maths: ");
-            marks[i][2] = sc.nextInt();
+            marks[i][2] = scanner.nextInt();
 
             if (marks[i][0] < 0 || marks[i][1] < 0 || marks[i][2] < 0) {
                 System.out.println("Invalid input. Please enter again.");

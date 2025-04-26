@@ -1,9 +1,9 @@
-package com.gevernova.java8.streams;
+package com.gevernova.java8.streams.interfaces;
 
 import java.util.Scanner;
 import java.util.function.Function;
 
-public class FunctionKeyword {
+public class FunctionInterface {
     public static void main(String[] args) {
         // Represents a function that accepts one argument and produces a result.
         Function<Integer,Double> multiplyBy100= x-> (double)x * 100;

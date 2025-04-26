@@ -8,7 +8,7 @@ public class PairWithGivenSum {
         int[] arr={10,23,43,54,1,5,85,10,4,2};
         int sum=12;
         boolean pairFound = false;
-        Collection<Integer> newarr=new ArrayList<>();
+        Collection<Integer> arrayList=new ArrayList<>();
         HashMap<Integer,Integer> map=new HashMap<>();
         for(int i=0;i<arr.length;i++){
             int num=arr[i];

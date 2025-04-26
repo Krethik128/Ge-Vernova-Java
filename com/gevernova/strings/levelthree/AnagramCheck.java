@@ -4,9 +4,9 @@ import java.util.Arrays;
 
 class AnagramCheck {
     public static void main(String[] args) {
-        String str1 = "listen";
-        String str2 = "silent";
-        boolean isAnagram = checkAnagram(str1, str2);
+        String string = "listen";
+        String stringTwo = "silent";
+        boolean isAnagram = checkAnagram(string, stringTwo);
         System.out.println("Are anagrams: " + isAnagram);
     }
 

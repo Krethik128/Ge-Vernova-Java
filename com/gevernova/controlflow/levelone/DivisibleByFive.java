@@ -7,8 +7,8 @@ public class DivisibleByFive {
         return "Is the number " + number + " divisible by 5? " + (number % 5 == 0 ? "Yes" : "No");
     }
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        int number = sc.nextInt();
+        Scanner scanner = new Scanner(System.in);
+        int number = scanner.nextInt();
         System.out.println(isDivisibleBy5(number));
     }
 }

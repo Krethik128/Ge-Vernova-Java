@@ -3,10 +3,10 @@ import java.util.*;
 public class CanVote {
     public static void main(String args[]){
         int students=10;
-        Scanner sc=new Scanner(System.in);
+        Scanner scanner=new Scanner(System.in);
         int arr[]=new int[students];
         for(int i=0;i<students;i++){
-            arr[i]=sc.nextInt();;
+            arr[i]=scanner.nextInt();;
             if(arr[i]<0){
                 System.out.println(arr[i]+" is invalid age");
             }

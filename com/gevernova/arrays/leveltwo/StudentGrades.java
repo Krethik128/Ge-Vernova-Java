@@ -4,9 +4,9 @@ import java.util.Scanner;
 
 public class StudentGrades {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
         System.out.print("Enter the number of students: ");
-        int numberOfStudents = sc.nextInt();
+        int numberOfStudents = scanner.nextInt();
 
         int[] physicsMarks = new int[numberOfStudents];
         int[] chemistryMarks = new int[numberOfStudents];
@@ -16,7 +16,7 @@ public class StudentGrades {
 
         for (int i = 0; i < numberOfStudents; i++) {
             System.out.print("Enter marks for student " + (i + 1) + " in Physics: ");
-            physicsMarks[i] = sc.nextInt();
+            physicsMarks[i] = scanner.nextInt();
             if (physicsMarks[i] < 0) {
                 System.out.println("Invalid input. Please enter positive values.");
                 i--;
@@ -24,7 +24,7 @@ public class StudentGrades {
             }
 
             System.out.print("Enter marks for student " + (i + 1) + " in Chemistry: ");
-            chemistryMarks[i] = sc.nextInt();
+            chemistryMarks[i] = scanner.nextInt();
             if (chemistryMarks[i] < 0) {
                 System.out.println("Invalid input. Please enter positive values.");
                 i--;
@@ -32,7 +32,7 @@ public class StudentGrades {
             }
 
             System.out.print("Enter marks for student " + (i + 1) + " in Maths: ");
-            mathsMarks[i] = sc.nextInt();
+            mathsMarks[i] = scanner.nextInt();
             if (mathsMarks[i] < 0) {
                 System.out.println("Invalid input. Please enter positive values.");
                 i--; //

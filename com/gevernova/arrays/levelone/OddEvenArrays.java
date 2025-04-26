@@ -4,9 +4,9 @@ import java.util.Scanner;
 
 public class OddEvenArrays {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
         System.out.print("Enter a number: ");
-        int number = sc.nextInt();
+        int number = scanner.nextInt();
 
         if (number <= 0) {
             System.out.println("Please enter a natural number.");

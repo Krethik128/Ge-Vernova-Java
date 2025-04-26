@@ -45,22 +45,22 @@ public class MergeSort {
         return merge(left, right);
     }
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
 
         System.out.println("Enter size of ArrayList:");
-        int size = sc.nextInt();
+        int size = scanner.nextInt();
 
-        ArrayList<Integer> arr = new ArrayList<>();
+        ArrayList<Integer> arrayList = new ArrayList<>();
 
         System.out.println("Enter elements:");
         for (int i = 0; i < size; i++) {
-            arr.add(sc.nextInt());
+            arrayList.add(scanner.nextInt());
         }
 
         System.out.println("Original ArrayList:");
-        System.out.println(arr);
+        System.out.println(arrayList);
 
-        ArrayList<Integer> sortedArr = mergeSort(arr);
+        ArrayList<Integer> sortedArr = mergeSort(arrayList);
 
         System.out.println("Sorted ArrayList using Merge Sort:");
         System.out.println(sortedArr);

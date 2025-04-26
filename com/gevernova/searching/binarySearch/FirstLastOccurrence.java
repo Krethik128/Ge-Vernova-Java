@@ -45,11 +45,11 @@ public class FirstLastOccurrence {
     }
 
     public static void main(String[] args) {
-        int[] arr = {1, 2, 4, 4, 4, 5, 6};
+        int[] array = {1, 2, 4, 4, 4, 5, 6};
         int target = 4;
 
-        int first = findFirst(arr, target);
-        int last = findLast(arr, target);
+        int first = findFirst(array, target);
+        int last = findLast(array, target);
 
         if (first != -1 && last != -1) {
             System.out.println("First Occurrence of " + target + ": " + first);

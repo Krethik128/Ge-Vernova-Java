@@ -23,31 +23,31 @@ import java.util.Scanner;
         }
     }
      public static void main(String[] args) {
-         Scanner sc = new Scanner(System.in);
+         Scanner scanner = new Scanner(System.in);
 
          System.out.println("Enter size of array:");
-         int size = sc.nextInt();
+         int size = scanner.nextInt();
 
-         int[] arr = new int[size];
+         int[] array = new int[size];
 
          System.out.println("Enter array elements:");
          for (int i = 0; i < size; i++) {
-             arr[i] = sc.nextInt();
+             array[i] = scanner.nextInt();
          }
 
          System.out.println("Original array:");
-         for (int num : arr) {
+         for (int num : array) {
              System.out.print(num + " ");
          }
 
-         selectionSort(arr, arr.length);
+         selectionSort(array, array.length);
 
          System.out.println("\nSorted array using Selection Sort:");
-         for (int num : arr) {
+         for (int num : array) {
              System.out.print(num + " ");
          }
 
-         sc.close();
+         scanner.close();
      }
 }
 

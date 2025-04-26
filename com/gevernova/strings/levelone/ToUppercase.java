@@ -16,20 +16,20 @@ public class ToUppercase {
             }
             return result.toString();
         }
-        public static boolean compareStrings(String s1, String s2) {
-            if (s1.length() != s2.length()) {
+        public static boolean compareStrings(String stringOne, String stringTwo) {
+            if (stringOne.length() != stringTwo.length()) {
                 return false;
             }
-            for (int i = 0; i < s1.length(); i++) {
-                if (s1.charAt(i) != s2.charAt(i)) {
+            for (int i = 0; i < stringOne.length(); i++) {
+                if (stringOne.charAt(i) != stringTwo.charAt(i)) {
                     return false;
                 }
             }
             return true;
         }
         public static void main(String[] args){
-            Scanner sc=new Scanner(System.in);
-            String str=sc.nextLine();
+            Scanner scanner=new Scanner(System.in);
+            String str=scanner.nextLine();
             String ConvertedUpperCase=toUppercase(str);
             String UsingInbuiltFunc=str.toUpperCase();
             boolean isSame = compareStrings(ConvertedUpperCase, UsingInbuiltFunc);

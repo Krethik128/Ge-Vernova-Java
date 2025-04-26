@@ -3,9 +3,9 @@ import java.util.Scanner;
 
 public class Factors {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
         System.out.print("Enter a number: ");
-        int number = sc.nextInt();
+        int number = scanner.nextInt();
 
         int maxFactor = 10;
         int[] factors = new int[maxFactor];

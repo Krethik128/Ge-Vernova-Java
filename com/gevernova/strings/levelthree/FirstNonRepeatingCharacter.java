@@ -4,9 +4,9 @@ import java.util.Scanner;
 
 class FirstNonRepeatingCharacter {
     public static void main(String[] args) {
-        Scanner sc=new Scanner(System.in);
-        String str = sc.nextLine();
-        char result = findFirstNonRepeatingChar(str);
+        Scanner scanner=new Scanner(System.in);
+        String string = scanner.nextLine();
+        char result = findFirstNonRepeatingChar(string);
         System.out.println("First non-repeating character: " + result);
     }
 

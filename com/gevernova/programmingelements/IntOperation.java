@@ -7,13 +7,13 @@ public class IntOperation {
         int a=sc.nextInt();
         int b=sc.nextInt();
         int c=sc.nextInt();
-        int result1=a+b*c;
-        int result2=a * b + c;
-        int result3=c + a / b;
-        int result4= a % b + c;
-        System.out.println(result1);
-        System.out.println(result2);
-        System.out.println(result3);
-        System.out.println(result4);
+        int resultOne=a+b*c;
+        int resultTwo=a * b + c;
+        int resultThree=c + a / b;
+        int resultFour= a % b + c;
+        System.out.println(resultOne);
+        System.out.println(resultTwo);
+        System.out.println(resultThree);
+        System.out.println(resultFour);
     }
 }

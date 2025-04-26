@@ -4,10 +4,10 @@ import java.util.Scanner;
 
 public class FizzBuzzForLoop {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
 
         System.out.print("Enter a positive integer: ");
-        int number = sc.nextInt();
+        int number = scanner.nextInt();
 
         if (number > 0) {
             for (int i = 1; i <= number; i++) {
@@ -25,7 +25,7 @@ public class FizzBuzzForLoop {
             System.out.println("Please enter a positive integer.");
         }
 
-        sc.close();
+        scanner.close();
     }
 }
 

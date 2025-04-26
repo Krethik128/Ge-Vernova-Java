@@ -2,13 +2,13 @@ package com.gevernova.strings.levelthree;
 
 class FrequencyUsingNestedLoops {
     public static void main(String[] args) {
-        String str = "example";
+        String string = "example";
 
-        for (int i = 0; i < str.length(); i++) {
-            char c = str.charAt(i);
+        for (int i = 0; i < string.length(); i++) {
+            char c = string.charAt(i);
             int count = 0;
-            for (int j = 0; j < str.length(); j++) {
-                if (str.charAt(j) == c) {
+            for (int j = 0; j < string.length(); j++) {
+                if (string.charAt(j) == c) {
                     count++;
                 }
             }

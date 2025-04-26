@@ -10,9 +10,9 @@ public class Calculator {
         System.out.print("Enter second number: ");
         double second = scanner.nextDouble();
         System.out.print("Enter operator (+, -, *, /): ");
-        String op = scanner.next();
+        String operator = scanner.next();
 
-        switch (op) {
+        switch (operator) {
             case "+":
                 System.out.println("Result: " + (first + second));
                 break;

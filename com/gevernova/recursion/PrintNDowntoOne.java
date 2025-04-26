@@ -1,13 +1,13 @@
 package com.gevernova.recursion;
 
-public class PrintNdowntoOne {
-     void Nto1(int N){
+public class PrintNDowntoOne {
+     void NtoOne(int N){
         if(N<1) return;
         System.out.println(N);
-        Nto1(N-1);
+        NtoOne(N-1);
     }
     public static void main(String[] args) {
-        PrintNdowntoOne n=new PrintNdowntoOne();
-        n.Nto1(10);
+        PrintNDowntoOne n=new PrintNDowntoOne();
+        n.NtoOne(10);
     }
 }

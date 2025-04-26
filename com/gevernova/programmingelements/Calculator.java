@@ -4,9 +4,9 @@ import java.util.*;
 
 public class Calculator {
     public static void main(String args[]){
-            Scanner sc=new Scanner(System.in);
-            double a=sc.nextDouble();
-            double b=sc.nextDouble();
+            Scanner scanner=new Scanner(System.in);
+            double a=scanner.nextDouble();
+            double b=scanner.nextDouble();
             double add=a+b;
             double sub=a-b;
             double mul=a*b;

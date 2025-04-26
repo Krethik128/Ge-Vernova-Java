@@ -33,35 +33,35 @@ public class CountingSort {
     }
 
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
 
         System.out.println("Enter size of array:");
-        int size = sc.nextInt();
+        int size = scanner.nextInt();
 
-        int[] arr = new int[size];
+        int[] array = new int[size];
 
         System.out.println("Enter non-negative integers to sort:");
         for (int i = 0; i < size; i++) {
-            arr[i] = sc.nextInt();
-            if (arr[i] < 0) {
+            array[i] = scanner.nextInt();
+            if (array[i] < 0) {
                 System.out.println("Counting sort only works with non-negative integers.");
                 return;
             }
         }
 
         System.out.println("Original array:");
-        for (int num : arr) {
+        for (int num : array) {
             System.out.print(num + " ");
         }
 
-        countingSort(arr);
+        countingSort(array);
 
         System.out.println("\nSorted array using Counting Sort:");
-        for (int num : arr) {
+        for (int num : array) {
             System.out.print(num + " ");
         }
 
-        sc.close();
+        scanner.close();
     }
 }
 
