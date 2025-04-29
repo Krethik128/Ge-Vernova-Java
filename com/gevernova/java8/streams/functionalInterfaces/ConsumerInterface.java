@@ -1,4 +1,4 @@
-package com.gevernova.java8.streams.interfaces;
+package com.gevernova.java8.streams.functionalInterfaces;
 
 import java.util.Arrays;
 import java.util.List;
@@ -8,7 +8,7 @@ public class ConsumerInterface {
     public static void main(String[] args) {
        List<Integer> list= Arrays.asList(1,2,3,4);
 
-        Consumer<Integer> obj1=x-> System.out.println(x);
+        Consumer<Integer> obj1= x-> System.out.println(x);
         obj1.accept(5);
         Consumer<List<Integer>> printList=x->{
         for(int i:x){

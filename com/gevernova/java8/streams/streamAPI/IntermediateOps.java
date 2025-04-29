@@ -1,16 +1,10 @@
-package com.gevernova.java8.streams.basics;
+package com.gevernova.java8.streams.streamAPI;
 
-import java.util.*;
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
-import java.util.function.Consumer;
-import java.util.function.Function;
-import java.util.function.Supplier;
-import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
-public class StreamMethods {
+public class IntermediateOps {
     public static void main(String[] args) {
         List<Integer> numList = Arrays.asList(1, 2, 3, 4, 10, 6, 7, 7, 9);
 
@@ -22,6 +16,7 @@ public class StreamMethods {
         System.out.println("count of String start with K are " + count);
         stringList.stream().filter(x -> x.length() >= 5).forEach(x -> System.out.print(x+" ")); //Printing based non String size > 5
         System.out.println("\n");
+
         //2.map
         System.out.println("Using map method");
         Stream<String> newList = stringList.stream().map(x -> x.toLowerCase());
@@ -50,9 +45,11 @@ public class StreamMethods {
                 System.out.println(str);
             }
         System.out.println("\n");
+
         //5 limit
         System.out.println("Using limit Method for limit till 3 Strings and only distinct ");
         stringList.stream().limit(3).distinct().forEach(System.out::println);
+
 
 
 

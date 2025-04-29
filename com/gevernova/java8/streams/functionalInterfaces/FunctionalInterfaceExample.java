@@ -1,6 +1,4 @@
-package com.gevernova.java8.streams.interfaces;
-
-import java.sql.SQLOutput;
+package com.gevernova.java8.streams.functionalInterfaces;
 
 // Defining a custom functional interface
 @FunctionalInterface //Using Function interface Annotation this allows only one abstract method in the interface

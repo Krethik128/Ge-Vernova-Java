@@ -1,4 +1,4 @@
-package com.gevernova.java8.streams.interfaces;
+package com.gevernova.java8.streams.functionalInterfaces;
 
 import java.util.Scanner;
 import java.util.function.Function;

@@ -1,6 +1,5 @@
-package com.gevernova.java8.streams.basics;
+package com.gevernova.java8.streams.streamAPI;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 

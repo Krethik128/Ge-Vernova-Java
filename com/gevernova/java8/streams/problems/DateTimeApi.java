@@ -1,9 +1,7 @@
-package com.gevernova.java8.streams.advanced;
+package com.gevernova.java8.streams.problems;
 
 import java.time.LocalDate;
-import java.time.LocalDateTime;
 import java.time.Period;
-import java.util.function.Function;
 
 public class DateTimeApi {
     public static void main(String[] args) {
