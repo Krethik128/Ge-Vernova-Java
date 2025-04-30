@@ -8,7 +8,6 @@ public class ReduceSum {
         int sum = Arrays.stream(numbers).
                 filter(n -> n % 2 == 0)
                 .reduce(0, Integer::sum);
-
         System.out.println(sum);
     }
 }
