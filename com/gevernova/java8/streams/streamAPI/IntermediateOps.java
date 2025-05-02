@@ -1,7 +1,6 @@
 package com.gevernova.java8.streams.streamAPI;
 
-import java.util.Arrays;
-import java.util.List;
+import java.util.*;
 import java.util.stream.Stream;
 
 public class IntermediateOps {
@@ -27,11 +26,12 @@ public class IntermediateOps {
             System.out.println(str);
         }
         System.out.println("\n");
-        System.out.println("Using Distinct Method");
-        //3.distinct
-        stringList.stream().distinct().forEach(x-> System.out.print(x+" "));
 
+        //3.distinct
+        System.out.println("Using Distinct Method");
+        stringList.stream().distinct().forEach(x-> System.out.print(x+" "));
         System.out.println("\n");
+
         //4.Sort function using comparator
         System.out.println("Using sort Method using comparator");
             List<String> stringListTwo = Arrays.asList("listen", "banana", "silent", "apple", "enlist", "cat", "tac", "act");
@@ -49,9 +49,28 @@ public class IntermediateOps {
         //5 limit
         System.out.println("Using limit Method for limit till 3 Strings and only distinct ");
         stringList.stream().limit(3).distinct().forEach(System.out::println);
+        System.out.println("\n");
 
 
+        //6.flatMap
+        System.out.println("\n"+"using flatMap for flatten a list of list into single list");
+        List<List<String>> listOfLists = Arrays.asList(
+                Arrays.asList("Reflection", "Collection", "Stream"),
+                Arrays.asList("Structure", "State", "Flow"),
+                Arrays.asList("Sorting", "Mapping", "Reduction", "Stream")
+        );
+        Set<String> IntermediateResult= new HashSet<>();
+        List<String>result= listOfLists.stream()
+                .flatMap(Collection::stream)
+                .filter(string->string.startsWith("S"))
+                .map(String::toUpperCase)
+                .distinct()
+                .peek(IntermediateResult::add)
+                //.forEach(x-> System.out.println(x+" ")); can print using For each terminal statement or
+                 .toList();//use tolist to convert into list
+        System.out.println(result);
 
+        System.out.println(Stream.iterate(1,x->x+1).skip(10).limit(100).count());
 
     }
     private static String sortCharacters(String str) {
