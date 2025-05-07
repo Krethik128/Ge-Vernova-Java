@@ -1,4 +1,4 @@
-package com.gevernova.java8.streams.functionalInterfaces;
+package com.gevernova.java8.functionalInterfaces;
 
 import java.util.Arrays;
 import java.util.List;

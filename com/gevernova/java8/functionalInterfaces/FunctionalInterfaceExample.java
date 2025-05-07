@@ -1,4 +1,4 @@
-package com.gevernova.java8.streams.functionalInterfaces;
+package com.gevernova.java8.functionalInterfaces;
 
 // Defining a custom functional interface
 @FunctionalInterface //Using Function interface Annotation this allows only one abstract method in the interface
