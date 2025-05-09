@@ -1,4 +1,4 @@
-package com.gevernova.java8.exceptionHandling;
+package com.gevernova.exceptionHandling;
 
 import java.io.FileNotFoundException;
 import java.io.FileReader;

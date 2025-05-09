@@ -1,9 +1,5 @@
-package com.gevernova.java8.exceptionHandling;
+package com.gevernova.exceptionHandling;
 
-
-import java.util.function.BiConsumer;
-import java.util.function.Predicate;
-import java.util.stream.Stream;
 
 public class ComparingDifferentExceptions {
     public static void main(String[] args) throws Exception {
